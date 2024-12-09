@@ -2,10 +2,7 @@ require("dotenv").config();
 const crypto = require("crypto");
 const axios = require("axios");
 const createBotInstance = require("../decorators/bot");
-const { nodemailerSender } = require("../decorators/nodemailerSender");
-const { db } = require("../firebase");
-const ejs = require("ejs");
-const path = require("path");
+
 // const filePath = path.join(__dirname, "../decorators/emailOnline.ejs");
 // const filePathPL = path.join(__dirname, "../decorators/emailOnlinePL.ejs");
 // const filePathEN = path.join(__dirname, "../decorators/emailOnlineEN.ejs");
