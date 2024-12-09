@@ -41,7 +41,7 @@ const gotsSender = async (req, res) => {
     subject: "Нове замовлення від GOTS",
     text: formattedData,
   };
-  await emailSender(sendEmail);
+  // await emailSender(sendEmail);
   bot.sendMessage(chatId, formattedData);
   res.status(200).json({
     message: "OK",

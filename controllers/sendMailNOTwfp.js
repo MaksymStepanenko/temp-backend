@@ -30,11 +30,11 @@ const sendMailNOTwfp = async (req, res) => {
     titleMail = "Order from GOT'S label";
   }
 
-  const emailList = [
-    personalData.email,
-  ];
+  const emailList = [personalData.email];
 
-  await nodemailerSender(titleMail, htmlContent, emailList.join(", "));
+  console.log("email send", emailList);
+
+  // await nodemailerSender(titleMail, htmlContent, emailList.join(", "));
 
   res.status(200).json({
     message: "OK",
