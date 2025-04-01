@@ -6,7 +6,6 @@ const wayforpayCallbackController = require("./controllers/wayforpayGotsCallback
 const gotsSender = require("./controllers/gotsController");
 const sendMailNOTwfp = require("./controllers/sendMailNOTwfp");
 
-
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -23,7 +22,7 @@ app.post("/send-email", sendMailNOTwfp);
 app.post("/gots", gotsSender);
 
 //crm
-
+app.post("temp-api", tempApiCRM);
 
 //wayforpay
 app.post("/wayforpay-gots", wayforpayController);
